@@ -1,0 +1,14 @@
+<div class="title">Select Shipping address</div>
+<div>
+    <div *ngFor="let adrs of address">
+        <div><input type='radio' name='adress' value={{adrs.id}} [(ngModel)]="selectedAddressId"> {{adrs.country}} ,
+            {{adrs.state}} , {{adrs.city}} , {{adrs.adressLine1}}</div>
+    </div>
+</div>
+
+
+<button class='addNewBtn' (click)="addNewAddress= true">Add New</button>
+<button class='setAddress' (click)="setSelectedAddress()">Set Address</button>
+<div *ngIf="addNewAddress">
+    <app-address-form (newAddressLine)="addAddressRow($event)"></app-address-form>
+</div>

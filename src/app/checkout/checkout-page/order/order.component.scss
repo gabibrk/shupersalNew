@@ -1,0 +1,78 @@
+.order-sum {
+    background-color: white;
+}
+
+.order-container {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.editAddressBtn {
+    display: inline-block;
+    background-color: white;
+    /* Green */
+    border: 1px solid #008CBA;
+    color: #008CBA;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-shipping {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total {
+    font-family: fantasy;
+    background-color: black;
+    color: white;
+    height: 30px;
+    box-shadow: 4px;
+    width: 300px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    padding-top: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
+.cart-row {
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    border-bottom: 1px solid silver;
+}
+
+.checkout-button:hover {
+    background-color: white;
+    color: #008CBA;
+    outline: 2px solid #008CBA;
+}
+
+.checkout-button {
+    margin-bottom: 1rem;
+    background-color: #008CBA;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 32px;
+    width: 60%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}

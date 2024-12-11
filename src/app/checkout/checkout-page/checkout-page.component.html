@@ -1,0 +1,14 @@
+<div class="cart-main-title">Your Cart</div>
+<!-- <button (click)="fetchItems()">getData</button> -->
+<div style="display:flex; justify-content: space-between;">
+    <div>
+        <app-items [items]="orderData?.items ?? []"></app-items>
+    </div>
+    <div>
+        <app-order [order]="orderData ?? undefined" (openAddressWindow)="continue()"></app-order>
+    </div>
+</div>
+
+<div class='addressWindow' *ngIf="showDiv">
+    <app-adressess (addressUpdated)="fetchItems() ; continue()" (closeAddressWindow)="continue()"></app-adressess>
+</div>

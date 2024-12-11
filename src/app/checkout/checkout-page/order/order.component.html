@@ -1,0 +1,23 @@
+<div class="cart-total">Carts Total</div>
+<div class="order-container">
+    <div class="order-sum">
+        <div class="cart-row"><span>Subtotal </span><span>{{order?.subtotal ?? 0 }}$</span></div>
+        <div class="cart-row"><span>Shipping </span><span>{{order?.shipping ?? 0 }}$</span></div>
+        <div class="cart-row"><span>Tax </span><span>{{order?.tax ?? 0 }}$</span></div>
+        <div class="cart-row total"><span>Total </span><span>{{order?.total ?? 0 }}$</span></div>
+
+        <div class="checkout-button">checkout</div>
+
+
+        <div >
+            
+            <div class="checkout-shipping"><span>Shipping Address: </span> <button class="editAddressBtn" (click)="openAddress()">edit</button></div>
+            <div>
+                <span>{{order?.shippingAddress?.country}} , </span>
+                <span>{{order?.shippingAddress?.state}} ,  </span>
+                <span>{{order?.shippingAddress?.city}} , </span>
+                <span>{{order?.shippingAddress?.addressLine1}}</span>
+            </div>
+        </div>
+    </div>
+</div>

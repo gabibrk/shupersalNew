@@ -1,0 +1,35 @@
+<div class="cart-row-title ">
+    <div class="cart-item">
+    </div>
+    <div class="cart-item ">
+
+        Product
+
+    </div>
+    <div class="cart-item">
+        <span>Price</span>
+    </div>
+    <div class="cart-item ">
+        <span> Quantity </span>
+    </div>
+
+</div>
+<div *ngFor="let item of items" class="cart-row-table">
+    <div class="cart-item-content">
+        <div class="cart-item product-img">
+            <img [src]="item.product.imageUrl" alt="Product Image">
+        </div>
+        <div class="cart-item cart-item-details">
+            <div class="product-name">{{ item.product.name }}</div>
+            <div class="product-size-color" [appSplitSizeColor]="item.product.sizeColor"></div>
+            
+        </div>
+        <div class="cart-item product-price">
+            <span>{{ item.product.price }}$</span>
+        </div>
+        <div class="cart-item product-quantity">
+            <span> {{ item.quantity }}</span>
+        </div>
+
+    </div>
+</div>
